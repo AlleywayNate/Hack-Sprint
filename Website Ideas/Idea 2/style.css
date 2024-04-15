@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style header */
+header {
+    background-color: #006699;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style navigation bar */
+nav {
+    background-color: #004466;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style main content area */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+    flex-basis: 20%;
+}
+
+.content {
+    flex-basis: 55%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style footer */
+footer {
+    background-color: #006699;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Add custom styles for the "Edit Profile" link */
+.edit-profile {
+    display: block;
+    margin-top: 10px;
+    color: #006699;
+    text-decoration: none;
+}
+
+.edit-profile:hover {
+    text-decoration: underline;
+}

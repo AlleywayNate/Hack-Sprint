@@ -1,0 +1,31 @@
+/* Add styles for the welcome section */
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add styles for the about section */
+.about {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Add styles for the call-to-action section */
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the button */
+.button {
+    display: inline-block;
+    background-color: #006699;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #004466;
+}
