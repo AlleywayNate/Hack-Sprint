@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #distorted-text {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <p id="distorted-text" onclick="distortText()">Click me to distort!</p>
+
+    <script>
+        let distortionLevel = 0;
+
+        function distortText() {
+            const textElement = document.getElementById("distorted-text");
+            distortionLevel += 10;
+            textElement.style.transform = `scale(${1 + distortionLevel / 100})`;
+        }
+    </script>
+</body>
+</html>

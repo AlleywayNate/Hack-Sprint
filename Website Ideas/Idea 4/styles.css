@@ -1,0 +1,73 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-image: url('creepy-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) contrast(150%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Glitchy text effect */
+.glitch-text {
+    font-size: 24px;
+    color: #ff6666;
+    animation: glitch 2s infinite;
+}
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25%, 75% {
+        transform: translate(2px, -2px);
+    }
+    50% {
+        transform: translate(-2px, 2px);
+    }
+}
+
+/* Hidden elements with hover effect */
+.hidden-element {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.hidden-element:hover {
+    opacity: 1;
+}
+
+/* Cryptic navigation menu */
+.nav-item::before {
+    content: '🔍';
+    margin-right: 10px;
+}
+
+/* Glowing eyes animation */
+.creepy-image {
+    position: relative;
+}
+.glowing-eyes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #ff0000;
+    animation: blink 2s infinite alternate;
+}
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .teleporting-text {
+            font-size: 24px;
+            color: #00ff00;
+            animation: teleport 2s infinite alternate, blink 
+        }
+
+        @keyframes teleport {
+            0%, 100% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translate(100px, -50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="teleporting-text">Teleporting Text!</p>
+</body>
+</html>

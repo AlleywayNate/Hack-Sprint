@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .glitch-text {
+            font-size: 24px;
+            color: #000000;
+            animation: flicker .1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: .5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="glitch-text">Flickering Glitch Text</p>
+</body>
+</html>

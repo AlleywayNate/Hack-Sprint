@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .glitched-text {
+            font-size: 24px;
+            color: #ff6666;
+            animation: jitter 0.1s infinite alternate;
+        }
+
+        @keyframes jitter {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-2px);
+            }
+            75% {
+                transform: translateX(2px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p class="glitched-text">
+        Combine <span class="jittered">r@nd0m</span> ch@r@ct3rs and <span class="jittered">symb0ls</span> within your t3xt to cr3@t3 a glitch3d eff3ct.
+    </p>
+</body>
+</html>
