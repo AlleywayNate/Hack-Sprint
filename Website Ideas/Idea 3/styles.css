@@ -15,7 +15,7 @@ header {
 
 /* Style navigation bar */
 nav {
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
 }
@@ -61,7 +61,10 @@ main {
 
 /* Style footer */
 footer {
-    background-color: blueviolet;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     padding: 10px;
